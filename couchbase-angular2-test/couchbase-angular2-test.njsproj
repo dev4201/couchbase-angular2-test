@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>couchbase-angular2-test</Name>
+    <RootNamespace>couchbase-angular2-test</RootNamespace>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d2112881-d3d5-4a55-97e1-39ece2bb0f46</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ProjectFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="public\lib\angular\angular2-polyfills.js" />
+    <Compile Include="public\lib\angular\angular2.dev.js" />
+    <Compile Include="public\lib\angular\http.dev.js" />
+    <Compile Include="public\lib\angular\router.dev.js" />
+    <Compile Include="public\lib\bootstrap\dist\js\bootstrap.js" />
+    <Compile Include="public\lib\gentelella\js\autocomplete\countries.js" />
+    <Compile Include="public\lib\gentelella\js\autocomplete\jquery.autocomplete.js" />
+    <Compile Include="public\lib\gentelella\js\bootstrap.min.js" />
+    <Compile Include="public\lib\gentelella\js\calendar\fullcalendar.min.js" />
+    <Compile Include="public\lib\gentelella\js\chartjs\chart.min.js" />
+    <Compile Include="public\lib\gentelella\js\colorpicker\bootstrap-colorpicker.min.js" />
+    <Compile Include="public\lib\gentelella\js\colorpicker\docs.js" />
+    <Compile Include="public\lib\gentelella\js\cropping\cropper.min.js" />
+    <Compile Include="public\lib\gentelella\js\cropping\main.js" />
+    <Compile Include="public\lib\gentelella\js\cropping\main2.js" />
+    <Compile Include="public\lib\gentelella\js\custom.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\buttons.bootstrap.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\buttons.html5.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\buttons.print.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\dataTables.bootstrap.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\dataTables.buttons.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\dataTables.fixedHeader.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\dataTables.keyTable.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\dataTables.responsive.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\dataTables.scroller.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\jquery.dataTables.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\jszip.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\pdfmake.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\responsive.bootstrap.min.js" />
+    <Compile Include="public\lib\gentelella\js\datatables\vfs_fonts.js" />
+    <Compile Include="public\lib\gentelella\js\datepicker\daterangepicker.js" />
+    <Compile Include="public\lib\gentelella\js\dropzone\dropzone.js" />
+    <Compile Include="public\lib\gentelella\js\easypie\jquery.easypiechart.min.js" />
+    <Compile Include="public\lib\gentelella\js\echart\echarts-all.js" />
+    <Compile Include="public\lib\gentelella\js\echart\green.js" />
+    <Compile Include="public\lib\gentelella\js\editor\bootstrap-wysiwyg.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-apollo.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-basic.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-clj.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-css.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-dart.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-erlang.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-go.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-hs.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-lisp.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-llvm.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-lua.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-matlab.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-ml.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-mumps.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-n.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-pascal.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-proto.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-r.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-rd.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-scala.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-sql.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-tcl.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-tex.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-vb.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-vhdl.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-wiki.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-xq.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\lang-yaml.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\prettify.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\google-code-prettify\run_prettify.js" />
+    <Compile Include="public\lib\gentelella\js\editor\external\jquery.hotkeys.js" />
+    <Compile Include="public\lib\gentelella\js\flot\curvedLines.js" />
+    <Compile Include="public\lib\gentelella\js\flot\date.js" />
+    <Compile Include="public\lib\gentelella\js\flot\jquery.flot.js" />
+    <Compile Include="public\lib\gentelella\js\flot\jquery.flot.orderBars.js" />
+    <Compile Include="public\lib\gentelella\js\flot\jquery.flot.pie.js" />
+    <Compile Include="public\lib\gentelella\js\flot\jquery.flot.resize.js" />
+    <Compile Include="public\lib\gentelella\js\flot\jquery.flot.spline.js" />
+    <Compile Include="public\lib\gentelella\js\flot\jquery.flot.stack.js" />
+    <Compile Include="public\lib\gentelella\js\flot\jquery.flot.time.min.js" />
+    <Compile Include="public\lib\gentelella\js\flot\jquery.flot.tooltip.min.js" />
+    <Compile Include="public\lib\gentelella\js\gauge\gauge.min.js" />
+    <Compile Include="public\lib\gentelella\js\gauge\gauge_demo.js" />
+    <Compile Include="public\lib\gentelella\js\icheck\icheck.min.js" />
+    <Compile Include="public\lib\gentelella\js\input_mask\jquery.inputmask.js" />
+    <Compile Include="public\lib\gentelella\js\ion_range\ion.rangeSlider.min.js" />
+    <Compile Include="public\lib\gentelella\js\jquery.min.js" />
+    <Compile Include="public\lib\gentelella\js\knob\jquery.knob.min.js" />
+    <Compile Include="public\lib\gentelella\js\maps\gdp-data.js" />
+    <Compile Include="public\lib\gentelella\js\maps\jquery-jvectormap-2.0.3.min.js" />
+    <Compile Include="public\lib\gentelella\js\maps\jquery-jvectormap-us-aea-en.js" />
+    <Compile Include="public\lib\gentelella\js\maps\jquery-jvectormap-world-mill-en.js" />
+    <Compile Include="public\lib\gentelella\js\moment\moment.min.js" />
+    <Compile Include="public\lib\gentelella\js\moris\example.js" />
+    <Compile Include="public\lib\gentelella\js\moris\morris.min.js" />
+    <Compile Include="public\lib\gentelella\js\moris\raphael-min.js" />
+    <Compile Include="public\lib\gentelella\js\notify\pnotify.buttons.js" />
+    <Compile Include="public\lib\gentelella\js\notify\pnotify.core.js" />
+    <Compile Include="public\lib\gentelella\js\notify\pnotify.nonblock.js" />
+    <Compile Include="public\lib\gentelella\js\nprogress.js" />
+    <Compile Include="public\lib\gentelella\js\pace\pace.min.js" />
+    <Compile Include="public\lib\gentelella\js\parsley\parsley.min.js" />
+    <Compile Include="public\lib\gentelella\js\progressbar\bootstrap-progressbar.min.js" />
+    <Compile Include="public\lib\gentelella\js\select\select2.full.js" />
+    <Compile Include="public\lib\gentelella\js\sidebar\classie.js" />
+    <Compile Include="public\lib\gentelella\js\sidebar\modernizr.custom.js" />
+    <Compile Include="public\lib\gentelella\js\sidebar\sidebarEffects.js" />
+    <Compile Include="public\lib\gentelella\js\skycons\skycons.min.js" />
+    <Compile Include="public\lib\gentelella\js\sparkline\jquery.sparkline.min.js" />
+    <Compile Include="public\lib\gentelella\js\switchery\switchery.min.js" />
+    <Compile Include="public\lib\gentelella\js\tags\jquery.tagsinput.min.js" />
+    <Compile Include="public\lib\gentelella\js\textarea\autosize.min.js" />
+    <Compile Include="public\lib\gentelella\js\validator\validator.js" />
+    <Compile Include="public\lib\gentelella\js\wizard\jquery.smartWizard.js" />
+    <Compile Include="public\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Compile Include="public\lib\jquery-validation\dist\jquery.validate.js" />
+    <Compile Include="public\lib\jquery\dist\jquery.js" />
+    <Compile Include="public\lib\Rx.js" />
+    <Compile Include="public\lib\system-polyfills.js" />
+    <Compile Include="public\lib\system.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\users.js" />
+    <Compile Include="bin\www" />
+    <Content Include="config.json" />
+    <Content Include="package.json" />
+    <Content Include="public\app\app.component.html" />
+    <Content Include="public\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="public\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="public\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="public\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="public\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="public\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="public\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="public\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="public\lib\bootstrap\less\bootstrap.less" />
+    <Content Include="public\lib\gentelella\css\animate.min.css" />
+    <Content Include="public\lib\gentelella\css\bootstrap.min.css" />
+    <Content Include="public\lib\gentelella\css\calendar\fullcalendar.css" />
+    <Content Include="public\lib\gentelella\css\calendar\fullcalendar.min.css" />
+    <Content Include="public\lib\gentelella\css\calendar\fullcalendar.print.css" />
+    <Content Include="public\lib\gentelella\css\colorpicker\bootstrap-colorpicker.min.css" />
+    <Content Include="public\lib\gentelella\css\colorpicker\img\bootstrap-colorpicker\alpha-horizontal.png" />
+    <Content Include="public\lib\gentelella\css\colorpicker\img\bootstrap-colorpicker\alpha.png" />
+    <Content Include="public\lib\gentelella\css\colorpicker\img\bootstrap-colorpicker\hue-horizontal.png" />
+    <Content Include="public\lib\gentelella\css\colorpicker\img\bootstrap-colorpicker\hue.png" />
+    <Content Include="public\lib\gentelella\css\colorpicker\img\bootstrap-colorpicker\saturation.png" />
+    <Content Include="public\lib\gentelella\css\custom.css" />
+    <Content Include="public\lib\gentelella\css\datatables\css\demo_page.css" />
+    <Content Include="public\lib\gentelella\css\datatables\css\demo_table.css" />
+    <Content Include="public\lib\gentelella\css\datatables\css\demo_table_jui.css" />
+    <Content Include="public\lib\gentelella\css\datatables\css\jquery.dataTables.css" />
+    <Content Include="public\lib\gentelella\css\datatables\css\jquery.dataTables_themeroller.css" />
+    <Content Include="public\lib\gentelella\css\datatables\images\back_disabled.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\back_enabled.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\back_enabled_hover.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\favicon.ico" />
+    <Content Include="public\lib\gentelella\css\datatables\images\forward_disabled.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\forward_enabled.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\forward_enabled_hover.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\Sorting icons.psd" />
+    <Content Include="public\lib\gentelella\css\datatables\images\sort_asc.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\sort_asc_disabled.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\sort_both.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\sort_desc.png" />
+    <Content Include="public\lib\gentelella\css\datatables\images\sort_desc_disabled.png" />
+    <Content Include="public\lib\gentelella\css\datatables\tools\css\dataTables.tableTools.css" />
+    <Content Include="public\lib\gentelella\css\editor\external\google-code-prettify\prettify.css" />
+    <Content Include="public\lib\gentelella\css\editor\index.css" />
+    <Content Include="public\lib\gentelella\css\floatexamples.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\aero%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\aero.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\aero.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\blue%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\blue.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\blue.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\flat%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\flat.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\flat.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\green%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\green.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\green.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\grey%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\grey.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\grey.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\orange%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\orange.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\orange.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\pink%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\pink.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\pink.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\purple%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\purple.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\purple.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\red%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\red.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\red.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\yellow%402x.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\yellow.css" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\yellow.png" />
+    <Content Include="public\lib\gentelella\css\icheck\flat\_all.css" />
+    <Content Include="public\lib\gentelella\css\ion.rangeSlider.css" />
+    <Content Include="public\lib\gentelella\css\ion.rangeSlider.skinFlat.css" />
+    <Content Include="public\lib\gentelella\css\maps\jquery-jvectormap-2.0.3.css" />
+    <Content Include="public\lib\gentelella\css\normalize.css" />
+    <Content Include="public\lib\gentelella\css\nprogress.css" />
+    <Content Include="public\lib\gentelella\css\progressbar\bootstrap-progressbar-3.3.0.css" />
+    <Content Include="public\lib\gentelella\css\select\select2.min.css" />
+    <Content Include="public\lib\gentelella\css\switchery\switchery.min.css" />
+    <Content Include="public\lib\gentelella\fonts\css\font-awesome.css" />
+    <Content Include="public\lib\gentelella\fonts\css\font-awesome.min.css" />
+    <Content Include="public\lib\gentelella\fonts\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\lib\gentelella\fonts\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\lib\gentelella\fonts\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\lib\gentelella\fonts\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\lib\gentelella\fonts\fonts\fontawesome-webfont.woff2" />
+    <Content Include="public\lib\gentelella\fonts\fonts\FontAwesome.otf" />
+    <Content Include="public\lib\gentelella\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\lib\gentelella\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\lib\gentelella\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\lib\gentelella\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\lib\gentelella\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="public\lib\gentelella\fonts\less\animated.less" />
+    <Content Include="public\lib\gentelella\fonts\less\bordered-pulled.less" />
+    <Content Include="public\lib\gentelella\fonts\less\core.less" />
+    <Content Include="public\lib\gentelella\fonts\less\fixed-width.less" />
+    <Content Include="public\lib\gentelella\fonts\less\font-awesome.less" />
+    <Content Include="public\lib\gentelella\fonts\less\icons.less" />
+    <Content Include="public\lib\gentelella\fonts\less\larger.less" />
+    <Content Include="public\lib\gentelella\fonts\less\list.less" />
+    <Content Include="public\lib\gentelella\fonts\less\mixins.less" />
+    <Content Include="public\lib\gentelella\fonts\less\path.less" />
+    <Content Include="public\lib\gentelella\fonts\less\rotated-flipped.less" />
+    <Content Include="public\lib\gentelella\fonts\less\spinning.less" />
+    <Content Include="public\lib\gentelella\fonts\less\stacked.less" />
+    <Content Include="public\lib\gentelella\fonts\less\variables.less" />
+    <Content Include="public\lib\gentelella\fonts\scss\font-awesome.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_animated.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_bordered-pulled.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_core.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_fixed-width.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_icons.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_larger.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_list.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_mixins.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_path.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_rotated-flipped.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_spinning.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_stacked.scss" />
+    <Content Include="public\lib\gentelella\fonts\scss\_variables.scss" />
+    <Content Include="public\lib\gentelella\images\1.png" />
+    <Content Include="public\lib\gentelella\images\4.jpg" />
+    <Content Include="public\lib\gentelella\images\american-express.png" />
+    <Content Include="public\lib\gentelella\images\back_disabled.png" />
+    <Content Include="public\lib\gentelella\images\back_enabled.png" />
+    <Content Include="public\lib\gentelella\images\back_enabled_hover.png" />
+    <Content Include="public\lib\gentelella\images\bootstrap-colorpicker\alpha-horizontal.png" />
+    <Content Include="public\lib\gentelella\images\bootstrap-colorpicker\alpha.png" />
+    <Content Include="public\lib\gentelella\images\bootstrap-colorpicker\hue-horizontal.png" />
+    <Content Include="public\lib\gentelella\images\bootstrap-colorpicker\hue.png" />
+    <Content Include="public\lib\gentelella\images\bootstrap-colorpicker\saturation.png" />
+    <Content Include="public\lib\gentelella\images\data.png" />
+    <Content Include="public\lib\gentelella\images\favicon.ico" />
+    <Content Include="public\lib\gentelella\images\forward_disabled.png" />
+    <Content Include="public\lib\gentelella\images\forward_enabled.png" />
+    <Content Include="public\lib\gentelella\images\forward_enabled_hover.png" />
+    <Content Include="public\lib\gentelella\images\icons.png" />
+    <Content Include="public\lib\gentelella\images\img.jpg" />
+    <Content Include="public\lib\gentelella\images\loading.gif" />
+    <Content Include="public\lib\gentelella\images\mastercard.png" />
+    <Content Include="public\lib\gentelella\images\paypal2.png" />
+    <Content Include="public\lib\gentelella\images\picture-2.jpg" />
+    <Content Include="public\lib\gentelella\images\picture.jpg" />
+    <Content Include="public\lib\gentelella\images\picture2.jpg" />
+    <Content Include="public\lib\gentelella\images\prod1.jpg" />
+    <Content Include="public\lib\gentelella\images\prod2.jpg" />
+    <Content Include="public\lib\gentelella\images\prod3.jpg" />
+    <Content Include="public\lib\gentelella\images\prod4.jpg" />
+    <Content Include="public\lib\gentelella\images\prod5.jpg" />
+    <Content Include="public\lib\gentelella\images\sprite-skin-flat.png" />
+    <Content Include="public\lib\gentelella\images\sprite-skin-modern.png" />
+    <Content Include="public\lib\gentelella\images\sprite-skin-nice.png" />
+    <Content Include="public\lib\gentelella\images\sprite-skin-simple.png" />
+    <Content Include="public\lib\gentelella\images\user.png" />
+    <Content Include="public\lib\gentelella\images\visa.png" />
+    <Content Include="public\lib\gentelella\js\datatables\buttons.bootstrap.min.css" />
+    <Content Include="public\lib\gentelella\js\datatables\fixedHeader.bootstrap.min.css" />
+    <Content Include="public\lib\gentelella\js\datatables\jquery.dataTables.min.css" />
+    <Content Include="public\lib\gentelella\js\datatables\json\scroller-demo.json" />
+    <Content Include="public\lib\gentelella\js\datatables\responsive.bootstrap.min.css" />
+    <Content Include="public\lib\gentelella\js\datatables\scroller.bootstrap.min.css" />
+    <Content Include="public\lib\gentelella\js\maps\us-unemployment.json" />
+    <Content Include="public\lib\gentelella\js\sidebar\component.css" />
+    <Content Include="public\stylesheets\style.styl" />
+    <Content Include="README.md" />
+    <Content Include="tsconfig.json" />
+    <Content Include="typings.json" />
+    <Content Include="views\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\lib\" />
+    <Folder Include="public\app\" />
+    <Folder Include="public\lib\angular\" />
+    <Folder Include="public\lib\bootstrap\" />
+    <Folder Include="public\lib\bootstrap\dist\" />
+    <Folder Include="public\lib\bootstrap\dist\css\" />
+    <Folder Include="public\lib\bootstrap\dist\js\" />
+    <Folder Include="public\lib\bootstrap\less\" />
+    <Folder Include="public\lib\gentelella\" />
+    <Folder Include="public\lib\gentelella\css\" />
+    <Folder Include="public\lib\gentelella\css\calendar\" />
+    <Folder Include="public\lib\gentelella\css\colorpicker\" />
+    <Folder Include="public\lib\gentelella\css\colorpicker\img\" />
+    <Folder Include="public\lib\gentelella\css\colorpicker\img\bootstrap-colorpicker\" />
+    <Folder Include="public\lib\gentelella\css\datatables\" />
+    <Folder Include="public\lib\gentelella\css\datatables\css\" />
+    <Folder Include="public\lib\gentelella\css\datatables\images\" />
+    <Folder Include="public\lib\gentelella\css\datatables\tools\" />
+    <Folder Include="public\lib\gentelella\css\datatables\tools\css\" />
+    <Folder Include="public\lib\gentelella\css\editor\" />
+    <Folder Include="public\lib\gentelella\css\editor\external\" />
+    <Folder Include="public\lib\gentelella\css\editor\external\google-code-prettify\" />
+    <Folder Include="public\lib\gentelella\css\icheck\" />
+    <Folder Include="public\lib\gentelella\css\icheck\flat\" />
+    <Folder Include="public\lib\gentelella\css\maps\" />
+    <Folder Include="public\lib\gentelella\css\progressbar\" />
+    <Folder Include="public\lib\gentelella\css\select\" />
+    <Folder Include="public\lib\gentelella\css\switchery\" />
+    <Folder Include="public\lib\gentelella\fonts\" />
+    <Folder Include="public\lib\gentelella\fonts\css\" />
+    <Folder Include="public\lib\gentelella\fonts\fonts\" />
+    <Folder Include="public\lib\gentelella\fonts\less\" />
+    <Folder Include="public\lib\gentelella\fonts\scss\" />
+    <Folder Include="public\lib\gentelella\images\" />
+    <Folder Include="public\lib\gentelella\images\bootstrap-colorpicker\" />
+    <Folder Include="public\lib\gentelella\js\" />
+    <Folder Include="public\lib\gentelella\js\autocomplete\" />
+    <Folder Include="public\lib\gentelella\js\calendar\" />
+    <Folder Include="public\lib\gentelella\js\chartjs\" />
+    <Folder Include="public\lib\gentelella\js\colorpicker\" />
+    <Folder Include="public\lib\gentelella\js\cropping\" />
+    <Folder Include="public\lib\gentelella\js\datatables\" />
+    <Folder Include="public\lib\gentelella\js\datatables\json\" />
+    <Folder Include="public\lib\gentelella\js\datepicker\" />
+    <Folder Include="public\lib\gentelella\js\dropzone\" />
+    <Folder Include="public\lib\gentelella\js\easypie\" />
+    <Folder Include="public\lib\gentelella\js\echart\" />
+    <Folder Include="public\lib\gentelella\js\editor\" />
+    <Folder Include="public\lib\gentelella\js\editor\external\" />
+    <Folder Include="public\lib\gentelella\js\editor\external\google-code-prettify\" />
+    <Folder Include="public\lib\gentelella\js\flot\" />
+    <Folder Include="public\lib\gentelella\js\gauge\" />
+    <Folder Include="public\lib\gentelella\js\icheck\" />
+    <Folder Include="public\lib\gentelella\js\input_mask\" />
+    <Folder Include="public\lib\gentelella\js\ion_range\" />
+    <Folder Include="public\lib\gentelella\js\knob\" />
+    <Folder Include="public\lib\gentelella\js\maps\" />
+    <Folder Include="public\lib\gentelella\js\moment\" />
+    <Folder Include="public\lib\gentelella\js\moris\" />
+    <Folder Include="public\lib\gentelella\js\notify\" />
+    <Folder Include="public\lib\gentelella\js\pace\" />
+    <Folder Include="public\lib\gentelella\js\parsley\" />
+    <Folder Include="public\lib\gentelella\js\progressbar\" />
+    <Folder Include="public\lib\gentelella\js\select\" />
+    <Folder Include="public\lib\gentelella\js\sidebar\" />
+    <Folder Include="public\lib\gentelella\js\skycons\" />
+    <Folder Include="public\lib\gentelella\js\sparkline\" />
+    <Folder Include="public\lib\gentelella\js\switchery\" />
+    <Folder Include="public\lib\gentelella\js\tags\" />
+    <Folder Include="public\lib\gentelella\js\textarea\" />
+    <Folder Include="public\lib\gentelella\js\validator\" />
+    <Folder Include="public\lib\gentelella\js\wizard\" />
+    <Folder Include="public\lib\jquery-validation-unobtrusive\" />
+    <Folder Include="public\lib\jquery-validation\" />
+    <Folder Include="public\lib\jquery-validation\dist\" />
+    <Folder Include="public\lib\jquery\" />
+    <Folder Include="public\lib\jquery\dist\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\cookie-parser\" />
+    <Folder Include="typings\globals\debug\" />
+    <Folder Include="typings\globals\ejs\" />
+    <Folder Include="typings\globals\express-serve-static-core\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\jade\" />
+    <Folder Include="typings\globals\mime\" />
+    <Folder Include="typings\globals\morgan\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\serve-favicon\" />
+    <Folder Include="typings\globals\serve-static\" />
+    <Folder Include="typings\globals\stylus\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="public\app\app.component.ts" />
+    <TypeScriptCompile Include="public\app\main.ts" />
+    <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\cookie-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\ejs\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\morgan\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-favicon\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

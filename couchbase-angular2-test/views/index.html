@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Welcome</h1>
+
+    <app></app>
+
+    <script src="/lib/system.js"></script>
+    <script src="/lib/system-polyfills.js"></script>
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/Rx.js"></script>
+    <script src="/lib/angular/angular2.dev.js"></script>
+    <script src="/lib/angular/angular2-polyfills.js"></script>
+    <script src="/lib/angular/http.dev.js"></script>
+    <script src="/lib/angular/router.dev.js"></script>
+   
+    <script>
+        System.config({
+            packages: { 'app': { defaultExtension: 'js' } }
+        });
+        System.import('app/main')
+                .then(null, console.error.bind(console));
+       
+    </script>
+</body>
+</html>
